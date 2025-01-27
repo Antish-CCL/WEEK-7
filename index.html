@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDENT REGISTRATION SYSTEM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <h1 class="Welcome-note">
+        <img src="images/CCL_logo.png" alt="" width="183px" />
+        <p>
+          Welcome To Color Coded Labs<br />
+          <span> ወደ የቀለም ኮድ ቤተ-ሙከራ እንኳን በደህና መጡ</span>
+        </p>
+        <div class="flag">
+          <img src="images/USAflag.png" alt="" width="270px" />
+          <img src="images/Flags.png" alt="" width="270px" />
+        </div>
+      </h1>
+    </div>
+    <div class="srs">
+      <p>
+        STUDENTS REGISTRATION SYSTEM<br />
+        የተማሪዎች ምዝገባ ስርዓት
+      </p>
+    </div>
+    <div id="studentlist"></div>
+    <div class="bttn-container">
+      <div class="bttns">
+        <p class="cohort">
+          COHORT 8 STUDENTS' RECORD<br />
+          የኮሆርት 8 ተማሪዎች መዝገብ
+        </p>
+
+        <button id="dsply">Display Students /ተማሪዎችን አሳይ</button>
+        <button id="avg">Calculate Average Grade/ አማካይ ደረጃን አስላ</button>
+        <input
+          type="text"
+          id="searchName"
+          placeholder="Enter first or last name / የመጀመሪያ ወይም የአያት ስም ያስገቡ"
+          required
+        />
+        <button id="srch">Search By Name/ በስም ፈልግ</button>
+      </div>
+
+      <form id="add-new-student-form">
+        <div class="student">
+          <p>ADD STUDENT/ተማሪ ጨምር</p>
+          <input
+            type="text"
+            id="Fname"
+            placeholder="Enter First Name / የመጀመሪያ ስም ያስገቡ"
+          />
+          <input
+            type="text"
+            id="Lname"
+            placeholder="Enter Last Name / የአያት ስም ያስገቡ"
+          />
+          <input type="text" id="Email" placeholder="Enter Email / ኢሜል አስገቡ" />
+          <input
+            type="text"
+            id="Telephone"
+            placeholder="Enter Telephone  /  ስልክ ያስገቡ"
+          />
+          <input
+            type="text"
+            id="subject"
+            placeholder="Enter Subject / የትምህርት ዓይነት"
+          />
+          <input
+            type="text"
+            id="instructor"
+            placeholder="Enter Instructor  /  የአስተማሪ ስም ያስገቡ"
+          />
+          <input
+            type="number"
+            id="grade"
+            placeholder="Enter Grade  /  ውጤቱን ያስገቡ"
+          />
+          <button id="add">Add / ጨምር</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="studentDetails"></div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
