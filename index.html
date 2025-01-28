@@ -15,7 +15,6 @@
           <span> ወደ የቀለም ኮድ ቤተ-ሙከራ እንኳን በደህና መጡ</span>
         </p>
         <div class="flag">
-          <img src="images/USAflag.png" alt="" width="270px" />
           <img src="images/Flags.png" alt="" width="270px" />
         </div>
       </h1>
@@ -25,8 +24,9 @@
         STUDENTS REGISTRATION SYSTEM<br />
         የተማሪዎች ምዝገባ ስርዓት
       </p>
+      
     </div>
-    <div id="studentlist"></div>
+    <!-- <div id="studentlist"></div> -->
     <div class="bttn-container">
       <div class="bttns">
         <p class="cohort">
@@ -39,12 +39,12 @@
         <input
           type="text"
           id="searchName"
-          placeholder="Enter first or last name / የመጀመሪያ ወይም የአያት ስም ያስገቡ"
+          placeholder="Enter First or Last Name / የመጀመሪያ ወይም የአያት ስም ያስገቡ"
           required
         />
         <button id="srch">Search By Name/ በስም ፈልግ</button>
       </div>
-
+      <div class="form-container">
       <form id="add-new-student-form">
         <div class="student">
           <p>ADD STUDENT/ተማሪ ጨምር</p>
@@ -82,8 +82,9 @@
           <button id="add">Add / ጨምር</button>
         </div>
       </form>
+      <div id="studentlist" class="student-list">
     </div>
-
+      </div>
     <div id="studentDetails"></div>
 
     <script src="scripts.js"></script>
